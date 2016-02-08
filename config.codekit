@@ -11,6 +11,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/images\/ag.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13412,
+		"inputAbbreviatedPath": "\/assets\/images\/ag.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/ag.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/ASECH-Logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -40,6 +51,17 @@
 		"initialSize": 15359,
 		"inputAbbreviatedPath": "\/assets\/images\/innovachilecorfo.jpg",
 		"outputAbbreviatedPath": "\/assets\/images\/innovachilecorfo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/logo+DF.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 60273,
+		"inputAbbreviatedPath": "\/assets\/images\/logo+DF.png",
+		"outputAbbreviatedPath": "\/assets\/images\/logo+DF.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
