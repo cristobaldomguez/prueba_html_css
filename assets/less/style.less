@@ -1,8 +1,12 @@
 @import 'lib/reset.less';
-//@import 'lib/awesome.less';
+@import 'lib/awesome.less';
 
 @import 'lib/variable.less';
 @import 'lib/function.less';
+
+
+
+
 
 html {
 
@@ -10,11 +14,29 @@ html {
 
 body {
 	font-family: 'Open Sans', sans-serif;
+
+	/* Clearfix */
+	.row:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	/* Floating cols, and padding */
+	[class*="col-"] {
+		float:left; 
+		box-sizing: border-box; 
+		padding:0px;
+	}
 }
 
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+}
+
+img {
+	max-width: 100%;
 }
 
 header {
@@ -52,7 +74,7 @@ header {
 		}
 
 		a.action_btn {
-			background-color: red;
+			background-color: @mainColor;
 			border-radius: 5px;
 			border-bottom: 4px solid rgba(0,0,0,.5);
 			color: white;
@@ -66,10 +88,83 @@ header {
 			width: 100%;
 
 			&:hover {
-				background-color: #7f0000;
-				border-bottom: 4px solid #7f0000;
+				background-color: @darkMainColor;
+				border-bottom: 4px solid @darkMainColor;
 			}
 		}
 	}
-
 }
+
+section {
+	//background-color: @mainColor;
+	border-bottom: 1px solid @mainColor;
+	color: @mainColor;
+	overflow: hidden;
+
+	.container {
+		padding: 60px 20px;
+
+		h2,
+		h3 {
+			text-align: center;
+		}
+
+		h2 {
+			font-size: 2.4em;
+		}
+
+		h3 {
+			font-size: 1.7em;
+		}
+	}
+}
+
+article {
+
+	.container {
+
+		.division {
+			border-bottom: 1px solid @mainColor;
+			padding: 60px 20px;
+			
+			h4 {
+				font-size: 1.4em;
+				text-align: center;
+			}
+
+			.empresas {
+				text-align: center;
+
+				li {
+					display: inline-block;
+					margin: 0 2%;
+					vertical-align: middle;
+
+					img {max-width: 170px;}
+				}
+			}
+		}
+	}
+}
+
+footer {
+
+	.social {
+
+		li {
+			display: inline-block;
+
+			a {
+				color: @mainColor;
+				font-size: 2em;
+			}
+		}
+	}
+}
+
+
+
+
+@import 'lib/desktop.less';
+@import 'lib/tablet.less';
+@import 'lib/phone.less';
